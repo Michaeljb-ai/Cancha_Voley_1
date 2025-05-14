@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volley - Canchas</title>
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Remix iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Menus 2 -->
+    <div class="filter-section mt-5 pt-4 pb-2">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Canchas</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="container my-4 pt-4">
+        <h1 class="mb-4">Nuestras Canchas</h1>
+        <h4 class="mt-5 text-center"><strong>De Día</strong></h4>
+
+        <!-- Lista de canchas -->
+        <div id="courtListView">
+            <!-- Cancha 1 -->
+            <div class="card mb-4 overflow-hidden mt-4">
+                <div class="row g-0">
+                    <div class="col-md-4 position-relative">
+                        <img src="../img/Cancha-de-voley-en-arena.jpg" alt="Cancha de Arena"
+                            class="img-fluid court-img w-100 h-100">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <h3 class="h5 fw-semibold mb-1">Cancha Principal</h3>
+                                    <div class="d-flex align-items-center">
+                                        <div class="text-warning me-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </div>
+                                        <small class="text-muted">(48 reseñas)</small>
+                                    </div>
+                                </div>
+                                <div class="text-primary fw-bold fs-4">$50/hora</div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-layout-text-sidebar text-primary"></i>
+                                        </div>
+                                        <small>Superficie: Arena fina</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-people text-primary"></i>
+                                        </div>
+                                        <small>Capacidad: 12 jugadores</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-rulers text-primary"></i>
+                                        </div>
+                                        <small>Dimensiones: 18x9m</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-clock text-primary"></i>
+                                        </div>
+                                        <small>Disponible: 7:00-23:00</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-muted mb-4">Cancha profesional con iluminación LED, marcador electrónico y
+                                sistema de sonido. Ideal para partidos oficiales y entrenamientos de alto rendimiento.
+                            </p>
+
+                            <div
+                                class="mt-auto d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                <div class="mb-3 mb-md-0">
+                                    <span class="tag bg-success bg-opacity-10 text-success">Disponible hoy</span>
+                                    <span class="tag bg-primary-light text-primary">Techada</span>
+                                    <span class="tag bg-primary-light text-primary">Profesional</span>
+                                </div>
+                                <div class="d-flex">
+                                    <button class="btn btn-outline-primary me-2 btn-custom">Ver detalles</button>
+                                    <button class="btn btn-primary btn-custom" onclick="reservarCancha('Cancha Principal')">Reservar ahora</button>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cancha 2 -->
+            <div class="card mb-4 overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-4 position-relative">
+                        <img src="../img/Cancha-de-voley-en-arena.jpg" alt="Cancha de Arena"
+                            class="img-fluid court-img w-100 h-100">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <h3 class="h5 fw-semibold mb-1">Cancha Principal</h3>
+                                    <div class="d-flex align-items-center">
+                                        <div class="text-warning me-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </div>
+                                        <small class="text-muted">(48 reseñas)</small>
+                                    </div>
+                                </div>
+                                <div class="text-primary fw-bold fs-4">$50/hora</div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-layout-text-sidebar text-primary"></i>
+                                        </div>
+                                        <small>Superficie: Arena fina</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-people text-primary"></i>
+                                        </div>
+                                        <small>Capacidad: 12 jugadores</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-rulers text-primary"></i>
+                                        </div>
+                                        <small>Dimensiones: 18x9m</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-clock text-primary"></i>
+                                        </div>
+                                        <small>Disponible: 7:00-23:00</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-muted mb-4">Cancha profesional con iluminación LED, marcador electrónico y
+                                sistema de sonido. Ideal para partidos oficiales y entrenamientos de alto rendimiento.
+                            </p>
+
+                            <div
+                                class="mt-auto d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                <div class="mb-3 mb-md-0">
+                                    <span class="tag bg-success bg-opacity-10 text-success">Disponible hoy</span>
+                                    <span class="tag bg-primary-light text-primary">Techada</span>
+                                    <span class="tag bg-primary-light text-primary">Profesional</span>
+                                </div>
+                                <div class="d-flex">
+                                    <button class="btn btn-outline-primary me-2 btn-custom">Ver detalles</button>
+                                    <button class="btn btn-primary btn-custom" onclick="reservarCancha(2, 'Cancha Indoor Profesional', 'Cancha con suelo amortiguado y vestuarios incluidos.', 10, 'Centro Deportivo Norte', 'Cancha-de-voley-en-arena.jpg')">Reservar ahora</button>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="mt-5 text-center"><strong>De Noche</strong></h4>
+
+        <!-- Lista de canchas noche -->
+        <div id="courtListViewNight">
+            <!-- Cancha 1 noche -->
+            <div class="card mb-4 overflow-hidden mt-4">
+                <div class="row g-0">
+                    <div class="col-md-4 position-relative">
+                        <img src="../img/Cancha-de-voley-en-arena.jpg" alt="Cancha de Arena"
+                            class="img-fluid court-img w-100 h-100">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <h3 class="h5 fw-semibold mb-1">Cancha Principal</h3>
+                                    <div class="d-flex align-items-center">
+                                        <div class="text-warning me-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </div>
+                                        <small class="text-muted">(48 reseñas)</small>
+                                    </div>
+                                </div>
+                                <div class="text-primary fw-bold fs-4">$50/hora</div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-layout-text-sidebar text-primary"></i>
+                                        </div>
+                                        <small>Superficie: Arena fina</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-people text-primary"></i>
+                                        </div>
+                                        <small>Capacidad: 12 jugadores</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-rulers text-primary"></i>
+                                        </div>
+                                        <small>Dimensiones: 18x9m</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-clock text-primary"></i>
+                                        </div>
+                                        <small>Disponible: 7:00-23:00</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-muted mb-4">Cancha profesional con iluminación LED, marcador electrónico y
+                                sistema de sonido. Ideal para partidos oficiales y entrenamientos de alto rendimiento.
+                            </p>
+
+                            <div
+                                class="mt-auto d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                <div class="mb-3 mb-md-0">
+                                    <span class="tag bg-success bg-opacity-10 text-success">Disponible hoy</span>
+                                    <span class="tag bg-primary-light text-primary">Techada</span>
+                                    <span class="tag bg-primary-light text-primary">Profesional</span>
+                                </div>
+                                <div class="d-flex">
+                                    <button class="btn btn-outline-primary me-2 btn-custom">Ver detalles</button>
+                                    <button class="btn btn-primary btn-custom" onclick="reservarCancha(3, 'Cancha Nocturna', 'Cancha techada con iluminación nocturna y marcador digital.', 8, 'Centro Deportivo Sur', 'Cancha-de-voley-en-arena.jpg')">Reservar ahora</button>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cancha 2 noche -->
+            <div class="card mb-4 overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-4 position-relative">
+                        <img src="../img/Cancha-de-voley-en-arena.jpg" alt="Cancha de Arena"
+                            class="img-fluid court-img w-100 h-100">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <h3 class="h5 fw-semibold mb-1">Cancha Principal</h3>
+                                    <div class="d-flex align-items-center">
+                                        <div class="text-warning me-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </div>
+                                        <small class="text-muted">(48 reseñas)</small>
+                                    </div>
+                                </div>
+                                <div class="text-primary fw-bold fs-4">$50/hora</div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-layout-text-sidebar text-primary"></i>
+                                        </div>
+                                        <small>Superficie: Arena fina</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-people text-primary"></i>
+                                        </div>
+                                        <small>Capacidad: 12 jugadores</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-rulers text-primary"></i>
+                                        </div>
+                                        <small>Dimensiones: 18x9m</small>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feature-icon bg-primary-light me-2">
+                                            <i class="bi bi-clock text-primary"></i>
+                                        </div>
+                                        <small>Disponible: 7:00-23:00</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-muted mb-4">Cancha profesional con iluminación LED, marcador electrónico y
+                                sistema de sonido. Ideal para partidos oficiales y entrenamientos de alto rendimiento.
+                            </p>
+
+                            <div
+                                class="mt-auto d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                <div class="mb-3 mb-md-0">
+                                    <span class="tag bg-success bg-opacity-10 text-success">Disponible hoy</span>
+                                    <span class="tag bg-primary-light text-primary">Techada</span>
+                                    <span class="tag bg-primary-light text-primary">Profesional</span>
+                                </div>
+                                <div class="d-flex">
+                                    <button class="btn btn-outline-primary me-2 btn-custom">Ver detalles</button>
+                                    <button class="btn btn-primary btn-custom" onclick="reservarCancha(4, 'Cancha Arena Nocturna', 'Cancha de arena con iluminación LED y vestuarios cercanos.', 6, 'Centro Deportivo Este', 'Cancha-de-voley-en-arena.jpg')">Reservar ahora</button>                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- por mientras -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión o Registrarse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>¿No tienes una cuenta? <a href="register.html" class="text-primary">Regístrate aquí</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de Confirmación de Reserva -->
+<div class="modal fade" id="confirmReservationModal" tabindex="-1" aria-labelledby="confirmReservationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmReservationModalLabel">Confirmar Reserva</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Información de la cancha -->
+                    <div class="col-md-6">
+                        <img id="canchaImagen" src="" alt="Cancha" class="img-fluid rounded mb-3">
+                        <h4 id="canchaNombre"></h4>
+                        <p id="canchaDescripcion" class="text-muted"></p>
+                        <ul>
+                            <li><strong>Capacidad:</strong> <span id="canchaCapacidad"></span> jugadores</li>
+                            <li><strong>Ubicación:</strong> <span id="canchaUbicacion"></span></li>
+                        </ul>
+                    </div>
+                    <!-- Formulario de reserva -->
+                    <div class="col-md-6">
+                        <form id="reservationForm">
+                            <div class="mb-3">
+                                <label for="fechaReserva" class="form-label">Fecha</label>
+                                <input type="date" class="form-control" id="fechaReserva" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="horaInicio" class="form-label">Hora de inicio</label>
+                                <input type="time" class="form-control" id="horaInicio" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="horaFin" class="form-label">Hora de fin</label>
+                                <input type="time" class="form-control" id="horaFin" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Confirmar Reserva</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/reservas.js"></script>
+</body>
+ <!-- Footer -->
+ <footer class="bg-dark text-white py-5">
+    <div class="container-fluid">
+        <div class="row justify-content-center text-center">
+            <p class="mb-2">Síguenos en:</p>
+            <div class="mb-3">
+                <a href="#" class="text-white me-3 fs-4"><i class="ri-facebook-fill"></i></a>
+                <a href="#" class="text-white me-3 fs-4"><i class="ri-twitter-fill"></i></a>
+                <a href="#" class="text-white fs-4"><i class="ri-instagram-fill"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2025 <strong>VolleyPro</strong>. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+</html>
